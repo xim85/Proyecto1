@@ -3,100 +3,210 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechNova - Componentes y Tecnología</title>
+    <title>TechZone - Tu Zona de Tecnología</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="top-nav">
-          <div class="menu">☰</div>
-          <div class="logo">TechNova</div>
-          <div class="nav-icons">
-            <span>Categorías</span>
-            <span>Catálogo</span>
-            <input type="text" placeholder="Buscar" />
-            <div class="user-actions">
-              <span>Mi cuenta</span>
-              <span>Carrito (0)</span>
-            </div>
-          </div>
+      <div class="container">
+        <div class="logo">
+          <h1>TechZone</h1>
         </div>
-        <div class="promo-banner">
-          <div class="promo-content">
-            <div class="promo-text">
-              <h2>Ofertas TOP de la semana</h2>
-              <p>Hasta un -40% de descuento</p>
-              <button>Ver ahora</button>
-            </div>
-            <div class="promo-products">
-              <img
-                src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10811377/1539-samsung-odyssey-g95c-49-led-dwqhd-240hz-freesync-premium-pro-curva.jpg"
-                alt="Samsung Monitor"
-              />
-              <img
-                src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10871294/1430-hp-omen-max-gaming-laptop-16-ah0004ns-oled-intel-core-ultra-7-255hx-32gb-1tb-ssd-rtx-5070-ti-16-review.jpg"
-                alt="Gaming Laptop"
-              />
-              <img
-                src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10802398/1764-asus-dual-geforce-rtx-4060-v2-oc-edition-8gb-gddr6-dlss3-2bfe8e2d-42c1-469d-bec5-a077d07f2fd5.jpg"
-                alt="Graphics Card"
-              />
-            </div>
-          </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Explora el universo tecnológico..." />
+          <button><i class="fas fa-search"></i></button>
         </div>
-      </nav>
+        <div class="user-options">
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
     </header>
 
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="#">Ordenadores</a></li>
+          <li><a href="#">Componentes</a></li>
+          <li><a href="#">Gaming</a></li>
+          <li><a href="#">Portátiles</a></li>
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Ofertas</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <main>
-      <section class="top-offers">
-        <h3>¡Consigue las ofertas más TOP del momento!</h3>
-        <div class="offer-grid">
-          <div class="offer-item">
-            <div class="discount-badge">-11%</div>
-            <img
-              src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10802398/1764-asus-dual-geforce-rtx-4060-v2-oc-edition-8gb-gddr6-dlss3-2bfe8e2d-42c1-469d-bec5-a077d07f2fd5.jpg"
-              alt="Graphics Card"
-            />
-            <span class="trending-badge">Trending</span>
-          </div>
-          <div class="offer-item">
-            <div class="discount-badge">-27%</div>
-            <img src="laptop.jpg" alt="Laptop" />
-            <span class="trending-badge">Trending</span>
-          </div>
-          <div class="offer-item">
-            <div class="discount-badge">-27%</div>
-            <img src="processor.jpg" alt="Processor" />
-            <span class="trending-badge">Te recomendamos</span>
-          </div>
-          <div class="offer-item">
-            <div class="discount-badge">-50%</div>
-            <img
-              src="https://thumb.pccomponentes.com/w-530-530/articles/1067/10678224/1582-pccom-elysium-pro-34-led-ultrawide-wqhd-165hz-freesync-curva-comprar.jpg"
-              alt="Monitor"
-            />
-            <span class="trending-badge">Promoción</span>
-          </div>
-          <div class="offer-item">
-            <div class="discount-badge">-16%</div>
-            <img
-              src="https://thumb.pccomponentes.com/w-150-150/articles/43/433841/1146-forgeon-mithril-argb-mesh-torre-atx-blanca.jpg"
-              alt="PC Case"
-            />
-            <span class="trending-badge">Te recomendamos</span>
-          </div>
-        </div>
-      </section>
+      <div class="container">
+        <section class="banner-section">
+       <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&h=300&q=80" alt="Banner TechZone - Tecnología Moderna"/>
+
+        <section class="products">
+          <h2>Productos Destacados</h2>
+          <ol class="product-list">
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1009/10097598/1307-corsair-k65-mini-teclado-mecanico-gaming-rgb-switch-cherry-mx-speed-negro-091faaaf-bc04-4048-bcc8-b5c0325a8f85.jpg"
+                  alt="Corsair K65 RGB Mini Teclado Mecánico"
+                />
+                <h3>Corsair K65 RGB Mini Teclado Mecánico</h3>
+                <p class="price">109,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_84089781?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402"
+                  alt="LG UltraGear 27GP950-B Monitor 4K"
+                />
+                <h3>LG UltraGear 27GP950-B 27" 4K</h3>
+                <p class="price">599,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_92392294?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402"
+                  alt="Logitech G502 Hero Ratón Gaming"
+                />
+                <h3>Logitech G502 Hero Ratón Gaming</h3>
+                <p class="price">49,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_144259075?x=536&y=402&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=536&ey=402&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=536&cdy=402"
+                  alt="MSI Katana 15 Portátil Gaming"
+                />
+                <h3>MSI Katana 15 Portátil Gaming</h3>
+                <p class="price">1.199,00 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10871103/1506-msi-geforce-rtx-5070-gaming-trio-oc-12gb-gddr7-reflex-2-rtx-ai-dlss4.jpg"
+                  alt="NVIDIA GeForce RTX 4080"
+                />
+                <h3>NVIDIA GeForce RTX 4080 16GB</h3>
+                <p class="price">699,00 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1066/10661603/1685-samsung-galaxy-s23-ultra-512gb-verde-libre-cargador-25w-01fcb360-7c9c-4de5-8f88-b555694ce3b1.jpg"
+                  alt="Samsung Galaxy S23 Ultra 256GB"
+                />
+                <h3>Samsung Galaxy S23 Ultra 256GB</h3>
+                <p class="price">939,00 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1078/10788197/1402-corsair-vengeance-ddr5-5600mhz-32gb-2x16gb-cl40-optimizado-amd.jpg"
+                  alt="Corsair Vengeance DDR5 32GB"
+                />
+                <h3>Corsair Vengeance DDR5 32GB</h3>
+                <p class="price">129,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10875654/181-pccom-ready-amd-ryzen-7-7800x3d-32gb-2tb-ssd-rtx-5060-ti.jpg"
+                  alt="AMD Ryzen 7 7800X3D"
+                />
+                <h3>AMD Ryzen 7 7800X3D 5GHz</h3>
+                <p class="price">699,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10802391/1151-sony-playstation-5-slim-pack-2-dualsense-comprar.jpg"
+                  alt="Sony PlayStation 5 Consola"
+                />
+                <h3>Sony PlayStation 5 Consola</h3>
+                <p class="price">619,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+            <li>
+              <article class="product-item">
+                <img
+                  src="https://thumb.pccomponentes.com/w-530-530/articles/1064/10648534/1952-samsung-990-pro-2tb-ssd-pcie-40-nvme-m2.jpg"
+                  alt="Samsung 990 Pro 2TB SSD NVMe"
+                />
+                <h3>Samsung 990 Pro 2TB SSD NVMe</h3>
+                <p class="price">199,99 €</p>
+                <a href="#" class="buy-btn">Ver Producto</a>
+              </article>
+            </li>
+          </ol>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <p>© 2023 TechNova. Todos los derechos reservados.</p>
+      <div class="container">
+        <div class="footer-links">
+          <div>
+            <h4>Explora TechZone</h4>
+            <ul>
+              <li><a href="#">Ordenadores</a></li>
+              <li><a href="#">Componentes</a></li>
+              <li><a href="#">Gaming</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Soporte</h4>
+            <ul>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Envíos</a></li>
+              <li><a href="#">Devoluciones</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Conéctate con Nosotros</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 TechZone</p>
+        </div>
       </div>
     </footer>
   </body>
