@@ -183,7 +183,6 @@ nav a {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* Añadimos un padding extra para el contenido */
   padding: var(--spacing-md);
 }
 
@@ -192,7 +191,6 @@ nav a {
   height: auto;
   border-radius: 4px;
   margin-bottom: var(--spacing-md);
-  /* Aseguramos que la imagen mantenga proporciones */
   aspect-ratio: 1;
   object-fit: contain;
 }
@@ -206,13 +204,11 @@ nav a {
   font-size: 1rem;
   margin-bottom: var(--spacing-sm);
   color: var(--text-color);
-  /* Cambiamos la altura fija por min-height para textos largos */
+
   min-height: 2.4em;
-  /* Permitimos que el texto ocupe hasta 3 líneas */
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* Añadimos un pequeño padding para separar del precio */
   padding-bottom: var(--spacing-xs);
 }
 
@@ -238,7 +234,6 @@ nav a {
   background-color: var(--primary-color);
 }
 
-/* Footer */
 footer {
   background-color: var(--primary-color);
   color: var(--white);
