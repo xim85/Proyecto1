@@ -1,5 +1,4 @@
 :root {
-  /* Colores principales */
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
   --accent-color: #e74c3c;
@@ -9,22 +8,18 @@
   --white: #ffffff;
   --border-color: #ddd;
 
-  /* Espaciados */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
 
-  /* Fuentes */
   --title-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
 
-  /* Sombras */
   --card-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   --hover-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Reset y estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +39,6 @@ body {
   padding: 0 var(--spacing-sm);
 }
 
-/* Header */
 header {
   background-color: var(--white);
   padding: var(--spacing-sm) 0;
@@ -98,7 +92,6 @@ header .container {
   text-decoration: none;
 }
 
-/* Navegación */
 nav {
   background-color: var(--primary-color);
   padding: var(--spacing-sm) 0;
@@ -118,17 +111,54 @@ nav a {
   padding: var(--spacing-xs) var(--spacing-sm);
 }
 
-/* Banner */
 .banner-section {
   margin: var(--spacing-md) 0;
+  overflow: hidden;
 }
 
-.banner-section img {
+.banner {
+  position: relative;
   width: 100%;
+  height: 300px;
   border-radius: 8px;
+  overflow: hidden;
 }
 
-/* Productos */
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.banner:hover img {
+  transform: scale(1.05);
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.banner-content {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  align-items: flex-start;
+  padding: 3rem;
+}
+
 .products h2 {
   text-align: center;
   margin: var(--spacing-lg) 0;
@@ -241,13 +271,25 @@ footer {
   text-align: center;
   padding-top: var(--spacing-md);
   margin-top: var(--spacing-md);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
+  }
+
+  .banner-content h2 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+
+  .banner {
+    height: 200px;
   }
 
   .search-bar {
@@ -272,6 +314,19 @@ footer {
 @media (max-width: 375px) {
   .product-list {
     grid-template-columns: 1fr;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    height: 150px;
+  }
+
+  .banner-content.gradient,
+  .banner-content {
+    padding: 1rem;
   }
 
   nav ul {
